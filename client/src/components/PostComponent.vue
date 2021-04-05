@@ -2,7 +2,7 @@
 	<div class="container">
 		<h1>Latest Posts</h1>
 		<div class="create-post">
-			<label for="create-post">Say Sometging...</label>
+			<label for="create-post">Say Something...</label>
 			<input
 				type="text"
 				id="create-post"
@@ -48,8 +48,8 @@
 		},
 		async created() {
 			try {
+
 				this.posts = await PostService.getPosts();
-				console.log(this.posts);
 			} catch (err) {
 				this.error = err.massage;
 			}
