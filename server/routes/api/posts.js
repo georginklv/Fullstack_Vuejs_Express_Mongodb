@@ -30,7 +30,6 @@ router.delete('/:id', async (req, res ) => {
 
 
 async function loadPostCollection() {
-  console.error('post');
   const MongoClient = require('mongodb').MongoClient;
   const client = await mongodb.MongoClient.connect(
     "mongodb+srv://asd123:asd123@cluster0.s8g3s.mongodb.net/vue_express?retryWrites=true&w=majority",
